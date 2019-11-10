@@ -1,0 +1,409 @@
+@import 'variable.styl';
+
+body, html {
+  line-height: 1;
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback';
+  user-select: none;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+  background: $color-background;
+  color: $color-text;
+}
+#detailViewPage {
+.yd-flexview{
+    width: 100%;
+  }
+  }
+  // 订单列表
+  .van-tabs--line .van-tabs__wrap{
+        position: fixed;
+            top: 45px;
+    }
+    .yd-list-img{
+      display none}
+
+.yd-list-theme5 .yd-list-item,.yd-list-theme5 .yd-list-item .yd-list-mes{
+  padding 0 
+  }
+
+.yd-step {
+  margin-top: 30px;
+}
+.yd-step-theme1 .yd-step-item-bottom{
+  color #999
+}
+.van-steps--horizontal .van-steps__items.van-steps__items--alone {
+  margin: 0;
+  padding: 0;
+}
+
+.van-nav-bar__title {
+  color: #fff;
+}
+
+.van-step--horizontal:last-child .van-step__circle-container {
+  right: -19px;
+}
+
+.van-cell {
+  border-bottom: 1px solid #ebedf0;
+}
+
+.van-cell::after {
+  border: 0;
+}
+
+.van-cell:not(:last-child)::after {
+  border-bottom: 0;
+}
+
+.van-tabbar-item--active {
+  color: #4fd6bc;
+}
+
+.topblank {
+  height: 46px;
+}
+
+.van-nav-bar {
+  background: #4fd6bc;
+  color: #fff;
+}
+
+.van-popup {
+  height: 100%;
+  width: 100%;
+  // z-index: 10 !important;
+}
+
+// .BgPop{
+// .van-popup {
+// background: $color-background;
+// }
+// }
+// 滑动
+.slide-enter-active, .slide-leave-active {
+  transition: all 0.3s;
+}
+
+.slide-enter, .slide-leave-to {
+  transform: translate3d(100%, 0, 0);
+}
+
+// 页面
+.routerViewPage {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 150;
+  background: $color-background;
+}
+
+.mangerIcon {
+  position: fixed;
+  top: 12px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.van-step--horizontal .van-step__circle-container {
+  background-color: transparent;
+}
+
+// .van-overlay{
+// background-color: rgba(0,0,0,.5);
+// }
+.way {
+  .van-overlay {
+    display: none;
+  }
+}
+
+// 护士端
+.van-collapse-item {
+  .van-cell {
+    padding: 12px 0;
+
+    .van-cell__right-icon {
+      position: absolute;
+      right: -2px;
+    }
+  }
+
+  .van-collapse-item__wrapper {
+    // position: absolute;
+    // width: 100%;
+    // left 0
+    // right: 0
+    .van-collapse-item__content {
+      padding: 0;
+
+      .van-cell {
+        padding: 10px 0;
+      }
+    }
+  }
+}
+
+.van-collapse-item__title--expanded {
+  .colltitle {
+    color: $color-theme;
+  }
+}
+
+.van-collapse-item:last-child {
+  .van-cell__right-icon {
+    right: 12px;
+  }
+}
+
+// 列表
+.gray {
+  height: 10px;
+  background: #f5f3f4;
+}
+
+.white {
+  height: 10px;
+  background: #fff;
+  position: relative;
+}
+
+.itemFinished {
+  color: #2d9e43;
+}
+
+.itemWaitPay {
+  color: #fd0708;
+}
+
+.itemAudit {
+  color: #fe191a;
+}
+
+.entry span {
+  color: #fe191a;
+}
+
+// 登录
+.loginCon {
+  .van-field .van-cell__title {
+    max-width: 55px !important;
+  }
+}
+
+.van-cell__left-icon {
+  color: #4fd6bc;
+}
+
+// 客服服务
+// .van-dialog .van-button {
+//   height: 40px;
+//   line-height: 40px;
+// }
+
+.van-dialog__confirm, .van-dialog__confirm:active {
+  color: #4fd6bc;
+  border-left: 1px solid #ebedf0 !important;
+}
+
+.confirmCon {
+  .van-field__control {
+    background: #ededed;
+    border-radius: 5px;
+    padding-left: 5px;
+    height: 36px;
+  }
+}
+
+.textarea {
+  .van-field__control {
+    font-size: 13px;
+    min-height: 80px;
+  }
+}
+
+.van-hairline--top-bottom::after {
+  border: 0;
+}
+
+// 
+.van-collapse-item__wrapper {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+// 个人资料
+.person {
+  .van-field__control {
+    text-align: right;
+    color: #000;
+  }
+
+  .van-cell__value {
+    color: #000;
+    padding-right: 10px;
+  }
+
+  .phone {
+    .van-cell__value {
+      padding-right: 0px;
+    }
+  }
+
+  .van-hairline--top-bottom::after {
+    border: 0;
+  }
+}
+
+.van-nav-bar {
+  .van-icon, .van-nav-bar__text {
+    color: #fff;
+  }
+}
+.refundViewPage{
+    .van-icon{
+      color: #000;
+      }
+  }
+.person {
+  .van-nav-bar {
+    .van-icon, .van-nav-bar__text {
+      color: #999;
+    }
+  }
+}
+
+// 解锁失败
+.unfinished {
+  .van-cell {
+    width: 142px;
+    margin: 0 auto;
+    border: 0;
+
+    .van-cell__title {
+      color: orange;
+    }
+
+    .van-cell__right-icon {
+      color: #ffa500;
+      margin: 0;
+    }
+  }
+}
+
+.leftIcon {
+  width: 15px;
+  height: 15px;
+  margin: -2px 0px;
+}
+
+.way {
+  .van-popup {
+    width: 200px;
+    height: 302px;
+    background: #f5f3f4;
+    z-index: 10 !important;
+  }
+
+  .light {
+    height: 20px;
+    width: 15px;
+    position: relative;
+    top: 5px;
+  }
+
+  .topservice {
+    text-align: center;
+
+    .van-row:first-child {
+      margin-bottom: 20px;
+    }
+
+    .topImg {
+      margin-top: 10px;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    .h4 {
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 14px;
+      color: #4fd6bc;
+      margin: 0;
+      line-height: 25px;
+    }
+  }
+
+  .pleaseSelect {
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    font-size: 12px;
+    bottom: 72px;
+    left: 0;
+
+    p {
+      margin: 0;
+    }
+
+    .pleaseText {
+      color: #4fd6bc;
+      line-height: 25px;
+    }
+
+    .tip {
+      color: #ccc;
+    }
+  }
+}
+
+// 故障反馈
+.selectQues {
+  .van-radio .van-icon {
+    display: none;
+  }
+
+  .van-radio__label {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: #999;
+  }
+
+  .radioActive {
+    border: 1px solid red !important;
+
+    .van-radio__label {
+      color: red;
+    }
+  }
+}
+
+// 列表
+.detail {
+  .van-cell {
+    .link {
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      margin-top: -7px;
+    }
+  }
+}
+
+.van-cell {
+  z-index: 100;
+}
